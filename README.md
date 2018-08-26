@@ -1,16 +1,16 @@
-#React360
+# React360
 This project allows you to display product renderings in full 360° glory. See below to get started!
 ![React360 Image Viewer](https://s3.amazonaws.com/assets.aldrinclement.com/React360.gif)
 
-##Getting Started
-`git clone https://github.com/aldrinc/React360`
+## Getting Started
+~~~~
+git clone https://github.com/aldrinc/React360`
+cd React360
+yarn start
+~~~~
 
-`cd React360`
 
-`yarn start`
-
-
-##Security Concern?
+## Security Concern?
 Please reach out personally to me at my fName.clement at gmail.com.
 
 ## Something Missing?
