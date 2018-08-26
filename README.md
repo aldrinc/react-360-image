@@ -4,7 +4,7 @@ This project allows you to display product renderings in full 360° glory. See b
 
 ## Getting Started
 ~~~~
-git clone https://github.com/aldrinc/React360`
+git clone https://github.com/aldrinc/React360
 cd React360
 yarn start
 ~~~~
