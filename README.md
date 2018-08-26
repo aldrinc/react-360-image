@@ -1,6 +1,5 @@
 # React360
 This project allows you to display product renderings in full 360° glory. See below to get started!
-![React360 Image Viewer](https://s3.amazonaws.com/assets.aldrinclement.com/React360.gif)
 
 ## Getting Started
 ~~~~
