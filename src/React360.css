@@ -1,0 +1,18 @@
+.react360 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: white;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  .icon-react360 {
+      height: 4em;
+      position: relative;
+  }
