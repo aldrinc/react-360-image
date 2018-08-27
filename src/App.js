@@ -11,6 +11,11 @@ class App extends Component {
         
     return (
       <div className="App">
+       <img
+          className="icon-react360"
+          alt=""
+          src={require(`./360_degrees.png`)}
+        />
         <React360 dir="awair-360" numImages="55" />
       </div>
     );

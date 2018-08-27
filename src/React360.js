@@ -1,10 +1,5 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 import "./React360.css";
-
-// replace this with import of your image files
-// numImages is the total number of images
-
-// var numImages = 55;
 
 // You can play with this to adjust the sensitivity
 // higher values make mouse less sensitive
@@ -43,16 +38,15 @@ static defaultProps = { dir: 'awair-360', numImages: 55 };
   };
 
   updateImageIndex = currentPosition => {
-    let numImages = this.props.numImages
+    let numImages = this.props.numImages;
     const pixelsPerImage = pixelsPerDegree * (360 / numImages);
     const { dragStart, imageIndex, dragStartIndex } = this.state;
     // pixels moved
     let dx = (currentPosition - dragStart) / pixelsPerImage;
     let index = Math.floor(dx) % numImages;
-    console.log(index, dx, numImages)
+
     if (index < 0) {
       index = numImages + index - 1;
-      console.log(index)
     }
     index = (index + dragStartIndex) % numImages;
     // console.log(index, dragStartIndex, numImages)
@@ -73,7 +67,6 @@ static defaultProps = { dir: 'awair-360', numImages: 55 };
 
   renderImage = () => {
     const { imageIndex } = this.state;
-    // console.log(imageIndex)
 
     if (isNaN(imageIndex)) {
         this.setState({imageIndex: 0})
@@ -82,17 +75,12 @@ static defaultProps = { dir: 'awair-360', numImages: 55 };
 
     return (
       <div className="react360">
-        <img
-          className="icon-react360"
-          alt=""
-          src={require(`./360_degrees.png`)}
-        />
+       
         <img
           className="react-360-img"
           alt=""
           src={require(`./${this.props.dir}/${imageIndex}.jpg`)}
         />
-        {imageIndex}
       </div>
     );
   };
