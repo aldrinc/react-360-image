@@ -1,7 +1,7 @@
 {
-  "name": "react-360",
+  "name": "react-360-image",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -12,5 +12,24 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project allows you to display product renderings in full 360° glory. See below to get started! ![React360 Image Viewer](https://s3.amazonaws.com/assets.aldrinclement.com/React360_v2.gif)",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldrinc/React360.git"
+  },
+  "keywords": [
+    "vr",
+    "js",
+    "reactjs",
+    "360"
+  ],
+  "author": "Aldrin Clement",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aldrinc/React360/issues"
+  },
+  "homepage": "https://github.com/aldrinc/React360#readme"
 }

@@ -16,7 +16,7 @@ class App extends Component {
           alt=""
           src={require(`./360_degrees.png`)}
         />
-        <React360 dir="awair-360" numImages="55" />
+        <React360 dir="awair-360" numImages={55} />
       </div>
     );
   }

@@ -6,7 +6,7 @@ import "./React360.css";
 const pixelsPerDegree = 3;
 
 class React360 extends Component {
-static defaultProps = { dir: 'awair-360', numImages: 55 };
+  static defaultProps = { dir: "awair-360", numImages: 55 };
 
   state = {
     dragging: false,
@@ -68,14 +68,8 @@ static defaultProps = { dir: 'awair-360', numImages: 55 };
   renderImage = () => {
     const { imageIndex } = this.state;
 
-    if (isNaN(imageIndex)) {
-        this.setState({imageIndex: 0})
-        return
-    }
-
     return (
       <div className="react360">
-       
         <img
           className="react-360-img"
           alt=""
@@ -97,6 +91,5 @@ static defaultProps = { dir: 'awair-360', numImages: 55 };
     );
   };
 }
-
 
 export default React360;
